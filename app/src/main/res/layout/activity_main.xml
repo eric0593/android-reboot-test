@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.longcheer.reboot.MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:id="@+id/linear_counts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/text_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/text_counts"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/counts"
+            android:numeric="integer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/counts"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/text_waittime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/text_waittime"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/wait_time"
+            android:numeric="integer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/waittime"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TestStart"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_horizontal" />
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TestStop"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_horizontal" />
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TestReset"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_horizontal" />            
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/text_count_down_stop"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout><!--left-->
+
+
+    </LinearLayout> <!--toppanal-->
+
+    <TextView
+        android:id="@+id/reboot_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topPanel"
+        android:background="#FF000000"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        android:text="@string/testSuccess"
+        android:textColor="#FFFFFFFF" />
+
+</LinearLayout>

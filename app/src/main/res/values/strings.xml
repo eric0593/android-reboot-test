@@ -1,0 +1,21 @@
+<resources>
+    <string name="TestStart">开始</string>
+	<string name="TestStop">停止</string>
+	<string name="TestReset">复位</string>
+	<string name="app_name">重启</string>
+	<string name="waittime">0</string>
+	<string name="counts">0</string>
+	<string name="text_waittime">间隔时间：</string>
+	<string name="text_counts">重启次数：</string>
+	<string name="text_leftcounts">剩余次数：</string>
+
+	<string name="result">result</string>
+	<string name="second"> 秒</string>
+	<string name="text_count_down_start">设备重启剩余</string>
+	<string name="text_count_down_stop">重启测试未开启</string>
+	<string name="text_count_reboot_now">设备马上重启</string>
+	<string name="tip">请输入重启次数和间隔时间</string>
+	<string name="Stoptip">停止测试</string>
+	<string name="testfail">重启异常!</string>
+	<string name="testSuccess">重启报告!</string>
+</resources>
